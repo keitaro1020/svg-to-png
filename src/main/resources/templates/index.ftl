@@ -21,7 +21,6 @@
                     <th>svg url</th>
                     <th>svg 画像</th>
                     <th>png url</th>
-                    <th>png 画像</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,8 +29,7 @@
                     <td>${url.id?string(0)}</td>
                     <td>${url.url}</td>
                     <td><img src="${url.url}" width="100px"></td>
-                    <td>${url.pngUrl}</td>
-                    <td><img src="${url.pngUrl}" width="100px"></td>
+                    <td><a href="${url.pngUrl}">${url.pngUrl}</a></td>
                 </tr>
             </#list>
             </tbody>
