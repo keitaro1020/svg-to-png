@@ -14,11 +14,9 @@
         </form>
 
         <hr>
-        <table>
+        <table BORDER="1" CELLSPACING="0">
             <thead>
                 <tr>
-                    <th>id</th>
-                    <th>svg url</th>
                     <th>svg 画像</th>
                     <th>png url</th>
                 </tr>
@@ -26,9 +24,7 @@
             <tbody>
             <#list urls as url>
                 <tr>
-                    <td>${url.id?string(0)}</td>
-                    <td>${url.url}</td>
-                    <td><img src="${url.url}" width="100px"></td>
+                    <td><a href="${url.url}"><img src="${url.url}" width="100px"></a></td>
                     <td><a href="${url.pngUrl}">${url.pngUrl}</a></td>
                 </tr>
             </#list>
